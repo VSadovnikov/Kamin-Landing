@@ -402,6 +402,7 @@ p {
 	text-align:center;
 	font-size:18px;
 	margin-bottom:50px;
+    width: 100%;
 }
 
 #about  img {	
@@ -442,7 +443,7 @@ p {
 }
 
 .panel-title>a{
-  color: #4e4e4e;
+  color: red;
 }
 
 .accordion-inner img{
@@ -466,18 +467,18 @@ a.accordion-toggle  i{
   margin-top: -10px;
   text-align: center;
   margin-right: -15px;
-  background: #ccc;
+  background: red;
   color:#fff;
 }
 
 .panel-heading.active a.accordion-toggle i{
-  background: #2487cd;
-  color: #fff;
+  background: red;
+  color: #red;
 }
 
 .panel-heading.active a.accordion-toggle.collapsed i{
-  background: #2487cd;
-  color: #fff;
+  background: red;
+  color: #red;
 }
 
 h5 {
