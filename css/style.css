@@ -611,10 +611,20 @@ textarea#message{
 
 }
 
+. leader-part {
+    text-align: center;
+}
 .text-center {
 	margin-bottom:20px;
 	font-size:30px;
 
+}
+
+.team-header {
+    margin-top: 30px;
+    font-size: 18px;
+    color: red;
+    font-weight: 400;
 }
 
 @media screen and (max-width:414px) {
