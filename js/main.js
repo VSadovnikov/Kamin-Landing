@@ -39,6 +39,9 @@ jQuery(function($) {
 		});
 	});
 
+	
+
+
 
 	//Pretty Photo
 	$("a[rel^='prettyPhoto']").prettyPhoto({

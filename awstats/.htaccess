@@ -1,0 +1,8 @@
+RewriteEngine Off
+
+AuthName "AWStats statistics"
+AuthType Basic
+AuthUserFile /home/virtwww/w_kamin-cc-ua_273ca209/http/awstats/.htpasswd  
+Require valid-user
+
+DirectoryIndex index.cgi

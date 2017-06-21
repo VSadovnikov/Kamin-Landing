@@ -37,7 +37,7 @@ p {
 .btn-primary:hover, 
 .btn-primary:focus{
   background: #fff;
-  color:#2487cd;
+  color:red;
   outline: none;
   box-shadow: none;
 } 
@@ -473,12 +473,12 @@ a.accordion-toggle  i{
 
 .panel-heading.active a.accordion-toggle i{
   background: red;
-  color: #red;
+  color: red;
 }
 
 .panel-heading.active a.accordion-toggle.collapsed i{
   background: red;
-  color: #red;
+  color: red;
 }
 
 h5 {
@@ -517,6 +517,18 @@ h5 {
     height: 500px;
 }
 
+.google-calendar {
+  margin: 8px;
+  margin-left: -2px;
+  width: 95%;
+  height: 90%px;
+}
+
+.calendar_frame {
+ width: 525px;
+  height: 350px;
+  margin-top: 10px;
+}
 .contact-page{
   padding-top: 80px;
   background:#eee;
@@ -579,18 +591,19 @@ textarea#message{
 }
 
 #footer {
-  padding-top: 30px;
-  padding-bottom: 30px;
-  color: #fff;
-  background: #2487cd;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: red;
+  background:#ccc;
+  font-weight: 500;
 }
 
 #footer a {
-  color: #fff;
+  color: darkgray;
 }
 
 #footer a:hover {
-  color: #fff;
+  color: red;
 }
 
 #footer ul {
@@ -612,7 +625,7 @@ textarea#message{
 
 }
 
-. leader-part {
+.leader-part {
     text-align: center;
 }
 .text-center {
@@ -633,7 +646,63 @@ textarea#message{
 	color:red;
 	font-size: 20px;
 	font-family: 'Roboto', sans-serif;
-	font-weight: 900;
-	
+	font-weight: 700;
+}
+
+.google-calendar {
+  margin: 8px;
+  margin-left: -2px;
+  width: auto;
+  height: auto;
+}
+
+.calendar_frame {
+ width: 400px;
+  height: 600px;
+  margin-top: 10px;
+}
+}
+
+@media screen and (max-width:1024px) and (orientation:landscape) {
+    .site-logo a.brand {
+	color:red;
+	font-size: 20px;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 700;
+}
+
+.google-calendar {
+  margin: 8px;
+  margin-left: -2px;
+  width: 100%;
+  height: 95%;
+}
+
+.calendar_frame {
+ width: 100%;
+  height: 95%;
+  margin-top: 10px;
+}
+}
+
+@media screen and (max-width:1024px) and (orientation:portrait) {
+    .site-logo a.brand {
+	color:red;
+	font-size: 20px;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 700;
+}
+
+.google-calendar {
+  margin: 8px;
+  margin-left: -2px;
+  width: 100%;
+  height: 95%;
+}
+
+.calendar_frame {
+ width: 100%;
+  height: 95%;
+  margin-top: 10px;
 }
 }
