@@ -4,7 +4,7 @@
  * All credit still goes to Martin and any issues/complaints/questions to me. *
  ******************************************************************************/
 
-var TO_ADDRESS = "basilsad1989@gmail.com"; // change this ...
+var TO_ADDRESS = "cde.kamin@gmail.com"; // change this ...
 
 function formatMailBody(obj) { // function to spit out all the keys/values from the form in HTML
   var result = "";
