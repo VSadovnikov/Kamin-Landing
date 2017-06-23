@@ -563,6 +563,17 @@ h5 {
   border-radius: 5px;
 }
 
+.capcha {
+  width: 100%;
+  text-align: center;
+  margin-left: 250px;
+}
+
+.capcha-input {
+  width: 100%;
+}
+
+
 textarea#message{
   resize: none;
   padding: 10px;
@@ -655,7 +666,18 @@ textarea#message{
     font-weight: 400;
 }
 
-@media screen and (max-width:414px) {
+
+.go_back_btn {
+  text-decoration: none;
+  color: black;
+}
+
+.go_back_btn:hover {
+  text-decoration: none;
+  color: red;
+}
+
+@media screen and (max-width:414px) and (orientation:portrait) {
     .site-logo a.brand {
 	color:red;
 	font-size: 20px;
@@ -675,7 +697,18 @@ textarea#message{
   height: 600px;
   margin-top: 10px;
 }
+
+.capcha {
+width: 100%;
+margin-left: 80px;
 }
+
+.capcha-input {
+  width: 100%;
+}
+
+}
+
 
 @media screen and (max-width:1024px) and (orientation:landscape) {
     .site-logo a.brand {
@@ -697,6 +730,18 @@ textarea#message{
   height: 95%;
   margin-top: 10px;
 }
+
+.capcha {
+width: 100%;
+margin-left: 170px;
+}
+
+.capcha-input {
+  width: 100%;
+}
+
+
+
 }
 
 @media screen and (max-width:1024px) and (orientation:portrait) {
@@ -719,4 +764,210 @@ textarea#message{
   height: 95%;
   margin-top: 10px;
 }
+
+.capcha {
+width: 100%;
+margin-left: 190px;
 }
+
+.capcha-input {
+  width: 100%;
+}
+
+}
+
+
+
+@media screen and (max-width:375px) and (orientation:portrait) {
+    .site-logo a.brand {
+	color:red;
+	font-size: 18px;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 700;
+}
+
+.google-calendar {
+  margin: 8px;
+  margin-left: -2px;
+  width: 100%;
+  height: 95%;
+}
+
+.calendar_frame {
+ width: 100%;
+  height: 95%;
+  margin-top: 10px;
+}
+
+.capcha {
+width: 100%;
+margin-left: 70px;
+}
+
+.capcha-input {
+  width: 90%;
+}
+
+}
+
+
+
+@media screen and (max-width:736px) and (orientation:portrait) {
+    .site-logo a.brand {
+	color:red;
+	font-size: 18px;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 700;
+}
+
+.google-calendar {
+  margin: 8px;
+  margin-left: -2px;
+  width: 100%;
+  height: 95%;
+}
+
+.calendar_frame {
+ width: 100%;
+  height: 95%;
+  margin-top: 10px;
+}
+
+.capcha {
+width: 100%;
+}
+
+.capcha-input {
+  width: 100%;
+}
+
+
+}
+
+@media screen and (max-width:736px) and (orientation:portrait) {
+    .site-logo a.brand {
+	color:red;
+	font-size: 18px;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 700;
+}
+
+.google-calendar {
+  margin: 8px;
+  margin-left: -2px;
+  width: 100%;
+  height: 95%;
+}
+
+.calendar_frame {
+ width: 100%;
+  height: 95%;
+  margin-top: 10px;
+}
+
+.capcha {
+width: 100%;
+}
+
+.capcha-input {
+  width: 100%;
+}
+
+}
+
+@media screen and (max-width:768px) and (orientation:portrait) {
+    .site-logo a.brand {
+	color:red;
+	font-size: 18px;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 700;
+}
+
+.google-calendar {
+  margin: 8px;
+  margin-left: -2px;
+  width: 100%;
+  height: 95%;
+}
+
+.calendar_frame {
+ width: 100%;
+  height: 95%;
+  margin-top: 10px;
+}
+
+.capcha {
+width: 100%;
+margin-left: 220px;
+}
+
+.capcha-input {
+  width: 100%;
+}
+
+}
+
+@media screen and (max-width:320px) and (orientation:portrait) {
+    .site-logo a.brand {
+	color:red;
+	font-size: 18px;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 700;
+}
+
+.google-calendar {
+  margin: 8px;
+  margin-left: -2px;
+  width: 100%;
+  height: 95%;
+}
+
+.calendar_frame {
+ width: 100%;
+  height: 95%;
+  margin-top: 10px;
+}
+
+.capcha {
+width: 100%;
+margin-left: 50px;
+}
+
+.capcha-input {
+  width: 100%;
+}
+}
+
+@media screen and (max-width:320px) and (orientation:portrait) {
+    .site-logo a.brand {
+	color:red;
+	font-size: 18px;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 700;
+}
+
+.google-calendar {
+  margin: 8px;
+  margin-left: -2px;
+  width: 100%;
+  height: 95%;
+}
+
+.calendar_frame {
+ width: 100%;
+  height: 95%;
+  margin-top: 10px;
+}
+
+.capcha {
+width: 100%;
+margin-left: 60px;
+}
+
+.capcha-input {
+  width: 100%;
+}
+}
+
+
+

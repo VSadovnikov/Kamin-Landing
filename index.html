@@ -16,9 +16,25 @@
     <link href="css/prettyPhoto.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
     
+    <style>
+#randomfield { 
+-webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none; 
+  width: 200px;
+  color: black;
+  border-color: black;
+  text-align: center;
+  font-size: 40px;
+  background-image: url('http://4.bp.blogspot.com/-EEMSa_GTgIo/UpAgBQaE6-I/AAAAAAAACUE/jdcxZVXelzA/s1600/ca.png');
+}
+</style>
     
 </head>
-<body>
+<body onLoad="ChangeCaptcha()" >
 <nav class="navbar navbar-default navbar-fixed-top">
     <div class="container">
         <div class="row">
@@ -503,7 +519,7 @@
             </div>
             <div class="row contact-wrap">
                 <div class="col-md-8 col-md-offset-2">
-                    <form id="gform" method="POST" class="pure-form pure-form-stacked"
+    <form id="gform" method="POST" class="pure-form pure-form-stacked"
                     action="https://script.google.com/macros/s/AKfycbyK0WTx3Zg_TjuUDjUEUtYFtNNwIhCjT_5GHvLWE0x8nDAkSpiy/exec">
     <!-- change the form action to your script url -->
 
@@ -527,21 +543,26 @@
       <input id="phone" type="tel" name="Телефон" class="form-control" 
       placeholder="+38-066-000-00-00"></input>
     </fieldset>
+
+    <fieldset class="form-group">
+      <input class="form-control text-center capcha" id="randomfield" disabled>
+      <input id="CaptchaEnter" class="form-control capcha-input " placeholder="Введіть символи з картинки" maxlength="6" required />
+    </fieldset>
+
+
     <fieldset class="text-center">
-    <button class="submit_button">
+    <button onclick="check()" class="submit_button">
       <i class=""></i>Відправити</button>
  </fieldset>
   </form>
-
   <!-- Customise the Thankyou Message People See when they submit the form: -->
   <div class="text-center" style="display:none;" id="thankyou_message">
     <h2><em>Дякуємо за Ваше повідомлення!!<br>
       Ми відповімо незабаром.</em></h2><br>
       <div class="text-center">
-        <a href="index.html">Повернутись на головну сторінку</a>
+        <a class="go_back_btn" href="index.html">Повернутись на головну сторінку</a>
       </div>
   </div>
-
   <!-- Submit the Form to Google Using "AJAX" -->
   <script data-cfasync="false" type="text/javascript"
   src="https://cdn.rawgit.com/dwyl/html-form-send-email-via-google-script-without-server/master/form-submission-handler.js"></script>
@@ -597,6 +618,6 @@
 <script src="js/jquery.easing.min.js"></script>
 <script src="https://maps.google.com/maps/api/js?sensor=true"></script>
 <script src="js/main.js"></script>
-
+<script src="js/capcha.js"></script>
 </body>
 </html>
