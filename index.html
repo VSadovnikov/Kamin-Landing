@@ -503,41 +503,51 @@
             </div>
             <div class="row contact-wrap">
                 <div class="col-md-8 col-md-offset-2">
-                    <form method="POST" action="https://script.google.com/macros/s/AKfycbyK0WTx3Zg_TjuUDjUEUtYFtNNwIhCjT_5GHvLWE0x8nDAkSpiy/exec">
-					<div class="form-group">
-                            <input type="text" name="Имя" class="form-control" id="name" onChange="coffeemsg()" placeholder="Ваше Ім'я"
-                                   data-rule="minlen:4" data-msg="Ім'я повинно містити мінімум 4 літери"/>
-                            <div class="validation"></div>
-                        </div>
-                        <div class="form-group">
-                            <input type="email" class="form-control" name="Email" id="email" placeholder="Ваш Email"
-                                   data-rule="email" onChange="coffeemsg()" data-msg="Введіть коректний формат enail"/>
-                            <div class="validation"></div>
-                        </div>
-                        <div class="form-group">
-                            <input type="text" class="form-control" name="Тема" id="subject" placeholder="Тема"
-                                   data-rule="minlen:4" onChange="coffeemsg()" data-msg="Тема повинна містити мінімум літер"/>
-                            <div class="validation"></div>
-                        </div>
-												
-                        <div class="form-group">
-                            <textarea class="form-control" name="Сообщение" id="message" rows="5" data-rule="required"
-                                      data-msg="Напишіть свое питання/коментар" onChange="coffeemsg()"
-                                      placeholder="Напишіть своє питання/коментар"></textarea>
-                            <div class="validation"></div>
-                        </div>
-                        <div class="text-center">
-                            <button type="submit"  onClick="coffeemsg()" class="btn btn-primary btn-lg">Відправити</ibutton>
-                        </div>
-							<input type="hidden" name="hidden" value="this is hidden" />					
-                    </form>
-                    <div style="display:none;" id="thankyou_message">
-                    <h2><em>Thanks</em> for filling out our test form!
-                    We will get back to you soon!</h2></div>
-                    <!-- Customise the Thankyou Message People See when they submit the form: -->
-                    
-                    <script data-cfasync="false" type="text/javascript"
-src="https://cdn.rawgit.com/dwyl/html-form-send-email-via-google-script-without-server/master/form-submission-handler.js"></script>
+                    <form id="gform" method="POST" class="pure-form pure-form-stacked"
+                    action="https://script.google.com/macros/s/AKfycbyK0WTx3Zg_TjuUDjUEUtYFtNNwIhCjT_5GHvLWE0x8nDAkSpiy/exec">
+    <!-- change the form action to your script url -->
+
+    <fieldset class="form-group">
+      <input id="name" class="form-control" name="Ім'я" placeholder="Ваше Ім'я" />
+    </fieldset>
+
+    <fieldset class="form-group">
+      <textarea id="message" name="Повідомлення" class="form-control" rows="10"
+      placeholder="Напишіть нам Ваше повідомлення/питання/коментар"></textarea>
+    </fieldset>
+
+    <fieldset class="form-group">
+      <input class="form-control" id="email" name="email" type="email" value=""
+      required placeholder="name@email.com"/>
+      <span id="email-invalid" style="display:none">
+     Невірний формат email</span>
+    </fieldset>
+
+    <fieldset class="form-group">
+      <input id="phone" type="tel" name="Телефон" class="form-control" 
+      placeholder="+38-066-000-00-00"></input>
+    </fieldset>
+    <fieldset class="text-center">
+    <button class="submit_button">
+      <i class=""></i>Відправити</button>
+ </fieldset>
+  </form>
+
+  <!-- Customise the Thankyou Message People See when they submit the form: -->
+  <div class="text-center" style="display:none;" id="thankyou_message">
+    <h2><em>Дякуємо за Ваше повідомлення!!<br>
+      Ми відповімо незабаром.</em></h2><br>
+      <div class="text-center">
+        <a href="index.html">Повернутись на головну сторінку</a>
+      </div>
+  </div>
+
+  <!-- Submit the Form to Google Using "AJAX" -->
+  <script data-cfasync="false" type="text/javascript"
+  src="https://cdn.rawgit.com/dwyl/html-form-send-email-via-google-script-without-server/master/form-submission-handler.js"></script>
+  <!-- <script data-cfasync="false" type="text/javascript"
+  src="/form-submission-handler.js"></script> -->
+<!-- END -->
                     </div>
                     
                 </div>
