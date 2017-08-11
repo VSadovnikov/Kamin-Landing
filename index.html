@@ -36,65 +36,70 @@
 </head>
 <body onLoad="ChangeCaptcha()" >
 <nav class="navbar navbar-default navbar-fixed-top">
-    <div class="container-mobile">
+    <div class="container">
         <div class="row">
             <div class="site-logo">
                 <a href="index.html"><img src="images/logo.png"/></a>
                 <a href="index.html" class="brand">Come In And Warm Up</a>
-        </div>
+            </div>
 
             <!-- Brand and toggle get grouped for better mobile display -->
-        <div class="navbar-header">
+            <div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#menu">
                     <i class="fa fa-bars"></i>
                 </button>
-        </div>
+            </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
-        <div class="collapse navbar-collapse" id="menu">
+            <div class="collapse navbar-collapse" id="menu">
                 <ul class="nav navbar-nav navbar-right">
                     <li><a href="#home">Головна</a></li>
-                    <li><a href="#news">Регулярні події</a></li>
                     <li><a href="#about">Напрямки</a></li>
                     <li><a href="#photo-galary">Проведені події</a></li>
                     <li><a href="#features">Команда</a></li>
                     <li><a href="#contact">Контакти</a></li>
                 </ul>
-        </div>
+            </div>
             <!-- /.Navbar-collapse -->
         </div>
     </div>
 </nav>
-<div class="col-md-6 col-sm-offset-3 text-center row center news-block">
-                <h2>Регулярні події</h2>
-                <hr>
-                <div class="slider col-md-12 col-sm-12 news-slider">
-                    <div id="about-slider">
-                        <div id="carousel-slider" class="carousel slide" data-ride="carousel">
-                            <!-- Indicators -->
-                            <ol class="carousel-indicators visible-xs">
-                                <li data-target="#carousel-slider" data-slide-to="0" class="active"></li>
-                                <li data-target="#carousel-slider" data-slide-to="1"></li>
-                                <li data-target="#carousel-slider" data-slide-to="2"></li>
-                            </ol>
-                            <div class="carousel-inner">
-                                <div class="item active lead text-center">
-                                    <p class="lead">Запрошуємо на молитовні сніданки</p>
-                                    <img class="img-responsive" src="images/pray-morning2.jpg"/>
-                                </div>
-                                <div class="item lead text-center">
-                                   <p class="lead">Запрошуємо на малі групи з вивчення Біблії</p>
-                                   <img class="img-responsive" src="images/little-groups.jpg"/>
-                                </div>
 
-                            </div>
-                        </div> <!--/#carousel-slider-->
-                    </div><!--/#about-slider-->
+<div id="home">
+    <div class="slider">
+        <div id="about-slider">
+            <div id="carousel-slider" class="carousel slide" data-ride="carousel">
+                <!-- Indicators -->
+                <ol class="carousel-indicators visible-xs">
+                    <li data-target="#carousel-slider" data-slide-to="0" class="active"></li>
+                    <li data-target="#carousel-slider" data-slide-to="1"></li>
+                    <li data-target="#carousel-slider" data-slide-to="2"></li>
+                </ol>
+
+                <div class="carousel-inner">
+                    <div class="item active">
+                        <img src="images/pray-morning2.jpg" class="img-responsive" alt="">
+                    </div>
+                    <div class="item">
+                        <img src="images/little-groups.jpg" class="img-responsive" alt="">
+                    </div>
                 </div>
-            </div>
+
+                <a class="left carousel-control hidden-xs" href="#carousel-slider" data-slide="prev">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+
+                <a class=" right carousel-control hidden-xs" href="#carousel-slider" data-slide="next">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+            </div> <!--/#carousel-slider-->
+        </div><!--/#about-slider-->
+    </div>
+</div>
+
 <section id="about">
     <div class="container">
-        <div class="row">
-            <div class="col-md-6 col-sm-offset-3 center row">
+        <div class="center">
+            <div class="col-md-6 col-md-offset-3">
                 <h2 id="about"> Напрямки служіння</h2>
                 <hr>
                 <p class="lead">Приєднуйся до Нас!! У нас приємне спілкування, вивчення Слова Божого і смачний час з
@@ -115,6 +120,7 @@
                                 <li data-target="#carousel-slider" data-slide-to="1"></li>
                                 <li data-target="#carousel-slider" data-slide-to="2"></li>
                             </ol>
+
                             <div class="carousel-inner">
                                 <div class="item active">
                                     <img src="images/photo1.jpg" class="img-responsive" alt="">
@@ -540,8 +546,7 @@
 
     <fieldset class="form-group">
       <input class="form-control text-center capcha" id="randomfield" disabled>
-      <input id="CaptchaEnter" class="form-control capcha-input " 
-      placeholder="Введіть символи з картинки" maxlength="6" required />
+      <input id="CaptchaEnter" class="form-control capcha-input " placeholder="Введіть символи з картинки" maxlength="6" required />
     </fieldset>
 
 
